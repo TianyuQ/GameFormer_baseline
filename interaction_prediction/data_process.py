@@ -541,7 +541,7 @@ if __name__ == "__main__":
     parser.add_argument('--load_path', type=str, help='path to dataset files')
     parser.add_argument('--save_path', type=str, help='path to save processed data')
     parser.add_argument('--point_path', type=str, help='path to load K-Means Anchors (Currently not included in the pipeline)', default='')
-    parser.add_argument('--processes', type=int, help='multiprocessing process num', default=8)
+    parser.add_argument('--processes', type=int, help='multiprocessing process num', default=1)
     parser.add_argument('--debug', action="store_true", help='visualize processed data', default=False)
     parser.add_argument('--test', action="store_true", help='whether to process testing set', default=False)
     parser.add_argument('--use_multiprocessing', action="store_true", help='use multiprocessing', default=False)
